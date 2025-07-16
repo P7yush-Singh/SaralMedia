@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll()
   initMobileMenu()
   initFormHandling()
+  initServiceCards()
 })
 
 function initAnimations() {
@@ -90,7 +91,7 @@ function initAnimations() {
       {
         duration: 0.6,
         y: 20,
-        opacity: 0,
+        opacity: 1,
         stagger: 0.2,
         ease: "power2.out",
       },
@@ -430,3 +431,4 @@ window.addEventListener("load", () => {
     ease: "power2.out",
   })
 })
+
