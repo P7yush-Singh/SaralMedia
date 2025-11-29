@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaralMedia</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaralMedia - Creative Production & Social Media Management</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="shortcut icon" href="smlogo.jpg" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- For SEO Ranking -->
+<meta name="title" content="SaralMedia - Creative Visuals & Video Editing" />
+<meta name="description" content="SaralMedia offers India's best creative visuals, and professional video editing to help your brand grow." />
+<meta name="keywords" content="SaralMedia  media services, India, digital media, video production, content creation, streaming services" />
+<meta name="author" content="SaralMedia Team" />
+<meta name="robots" content="index, follow" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://saralmedia.in/" />
+
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo" onclick="window.location.href='#home'">
-                    <div class="logo-icon"><img src="logo.jpg" alt=""></div>
+                    <div class="logo-icon"><img src="smlogo.jpg" alt=""></div>
                     <div class="logo-text">
-                        <h1>SaralMedia</h1>
+                        <h1>Saral Media</h1>
                     </div>
                 </div>
 
                 <nav class="nav-menu">
                     <a href="#home" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About Us</a>
                     <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About Us</a>
                     <a href="#why" class="nav-link">Why Choose Us</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </nav>
+                <div class="mobile-nav-menu">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#" class="nav-link">Our Story</a>
+    <a href="#services" class="nav-link">What we do</a>
+    <a href="#why" class="nav-link">Our Work</a>
+    <a href="#contact" class="nav-link">Career</a>
+</div>
 
                 <button class="contact-btn" onclick="window.location.href='#contact'">Contact Us</button>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <button class="mobile-menu-btn"><i class="fa fa-bars"></i></button>
             </div>
         </div>
     </header>
@@ -43,36 +59,27 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="badge">🏆 Best Company in Delhi</div>
+                    <div class="badge">🏆 Best Agency in India</div>
                     
                     <h1 class="hero-title">
-                        <span class="line-1">Best Design</span>
-                        <span class="line-2">and</span>
-                        <span class="line-3">Development Company</span>
-                        <span class="line-4">in Delhi</span>
+                        <span class="line-1">India's Leading</span>
+                        <span class="line-2">Creative</span>
+                        <span class="line-3">Production & Social Media</span>
+                        <span class="line-4">Agency</span>
                     </h1>
 
                     <p class="hero-description">
-                        <!-- Write a description for the new brand? its not a website making brand it is a provide live broascasting and creative visuals -->
-                        SaralMedia is your trusted partner for live broadcasting, creative visuals, and professional video editing. We deliver engaging digital experiences to help your brand connect, captivate, and grow.
+                        Saral Media is your go-to partner for innovative digital solutions. We specialize in Creative Production, and Social Media Management to help you stand out in the digital landscape.
                     </p>
 
                     <div class="features-grid">
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Live Broadcasting</span>
+                            <span>Creative Production</span>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Creative Visuals</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Fast Loading</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Mobile First</span>
+                            <span>Social Media Management</span>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
@@ -85,11 +92,11 @@
                     </div>
 
                     <div class="hero-buttons">
-                        <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        <button class="btn btn-primary" onclick="window.location.href='#contact'">
                             Get Started
                             <i class="fas fa-arrow-right"></i>
                         </button>
-                        <button class="btn btn-secondary" onclick="window.open('https://wa.me/919968500862?text=Hi%20SaralMedia,%20I%27d%20like%20to%20get%20more%20information%20about%20the%20services%20you%20offer.', '_blank')">
+                        <button class="btn btn-secondary" onclick="window.open('https://wa.me/919211807938?text=Hi%20SaralMedia,%20I%27d%20like%20to%20get%20more%20information%20about%20the%20services%20you%20offer.', '_blank')">
                             <i class="fab fa-whatsapp"></i>
                             WhatsApp Us
                         </button>
@@ -98,7 +105,7 @@
 
                 <div class="hero-image">
                     <div class="image-container">
-                        <img src="temp.jpg" alt="Website Design Showcase" class="hero-img">
+                        <img src="temp.webp" alt="Website Design Showcase" class="hero-img">
                         <div class="floating-element element-1"></div>
                         <div class="floating-element element-2"></div>
                     </div>
@@ -112,42 +119,6 @@
             </svg>
         </div>
     </section>
-
-    <!-- Stats Section -->
-    <!-- <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="stat-number" data-target="500">0</div>
-                    <div class="stat-label">Happy Clients</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="stat-number" data-target="1000">0</div>
-                    <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="stat-number" data-target="5">0</div>
-                    <div class="stat-label">Average Rating</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Support Available</div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Services Section -->
     <section id="services" class="services">
@@ -163,34 +134,27 @@
             <div class="services-grid">
                  <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-icon">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-video"></i>
                     </div>
-                    <h3>Live Broadcasting</h3>
+                    <h3>Creative Production</h3>
                     <p>
-                        High-quality live streaming solutions for events, webinars, and more
+                        We create stunning visuals and engaging content that captures your audience's attention
                     </p>
+                    <button class="service-btn" onclick="window.open('https://wa.me/919211807938?text=Hi%20SaralMedia,%20I%27d%20like%20to%20know%20about%20Live%20Broadcasting%20service.', '_blank')" >Request</button>
+                    <button class="service-btn" onclick="window.location.href='service-details.html?service=production'">Know More</button>
                 </div>
 
                  <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-icon">
-                        <i class="fas fa-palette"></i>
+                        <i class="fas fa-broadcast-tower"></i>
                     </div>
-                    <h3>Creative Visuals</h3>
+                    <h3>Social Media Management</h3>
                     <p>
-                        Stunning graphics and animations to enhance your brand's visual identity
+                        We manage your social media presence to enhance engagement and grow your brand online
                     </p>
+                    <button class="service-btn" onclick="window.open('https://wa.me/919211807938?text=Hi%20SaralMedia,%20I%27d%20like%20to%20know%20about%20Creative%20Visuals%20service.', '_blank')" >Request</button>
+                    <button class="service-btn" onclick="window.location.href='service-details.html?service=social'">Know More</button>
                 </div>
-
-                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Video Editing</h3>
-                    <p>
-                        Professional video editing services to create engaging content for your audience
-                    </p>
-                </div>
-
                  <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-icon">
                         <i class="fas fa-mobile-alt"></i>
@@ -204,21 +168,101 @@
         </div>
     </section>
 
-    <!-- Why Choose Us -->
-     <section id="why"></section>
+    <!-- About Section -->
+     <section id="about" class="about-section">
+  <div class="container about-grid">
+    <div class="about-image">
+      <img src="about.png" alt="About SaralMedia" />
+    </div>
+    <div class="about-content">
+      <div class="section-badge">About Us</div>
+      <h2 class="section-title">Empowering Brands with Visual Impact</h2>
+
+      <h3 class="typewriter-text">
+        We 
+        <span id="typewriter"></span>
+      </h3>
+
+      <p class="section-description">
+        Saral Media is a creative agency from India, specializing in Creative Production and Social Media Management — bringing your brand to life with impactful visuals and a strong digital presence.
+        <br /><br />
+        We’re not just a service provider — we’re your digital growth partner. With a keen eye on trends, a deep understanding of brand identity, and a passion for innovation, we help you stand out in the crowded digital space.
+        <br /><br />
+        From stunning videos to impactful reels and strategic social media planning, we bring your ideas to life and connect you with your audience. Let’s create something meaningful — the Saral way.
+      </p>
+      
+    </div>
+  </div>
+  
+</section>
+
+     <!-- Why Choose Us -->
+      <section id="why" class="why-us">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Why Choose Us</div>
+      <h2 class="section-title">Why Saral Media Stands Out</h2>
+      <p class="section-description">
+        At Saral Media, we combine creativity, technology, and a deep understanding of your goals to deliver unmatched digital services.
+      </p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <i class="fas fa-user-tie"></i>
+        <h3>Expert Team</h3>
+        <p>Our professionals are highly skilled in live broadcasting, visuals, and editing.</p>
+      </div>
+      <div class="why-card">
+        <i class="fa-solid fa-indian-rupee-sign"></i>
+        <h3>Affordable Pricing</h3>
+        <p>We offer premium quality services tailored to your budget.</p>
+      </div>
+      <div class="why-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Creative Excellence</h3>
+        <p>We produce standout visuals that bring your brand to life.</p>
+      </div>
+      <div class="why-card">
+  <i class="fas fa-flag-checkered"></i>
+  <h3>Proven Success</h3>
+  <p>
+    We’ve delivered <span id="success-count">0</span>+ happy clients.
+  </p>
+</div>
+
+      <div class="why-card">
+        <i class="fas fa-thumbs-up"></i>
+        <h3>Client-First</h3>
+        <p>We value transparency and prioritize your satisfaction always.</p>
+      </div>
+      <div class="why-card">
+        <i class="fas fa-headset"></i>
+        <h3>24/7 Support</h3>
+        <p>We’re always available to help you, whenever you need us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- CTA Section -->
     <section id="contact" class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title">Looking For Your Next Digital Solution?</h2>
+                <h2 class="cta-title">
+                    <!-- what should I write here  -->
+                    Ready to Elevate Your Brand?
+                </h2>
                 <p class="cta-description">
                     Let's discuss your project and create something amazing together. Get in touch with our expert team today.
                 </p>
 
                 <div class="contact-form">
-                    <form class="form" >
+                    <form class="form" action="https://api.web3forms.com/submit" method="POST">
                         <div class="form-row">
+
+                            <input type="hidden" name="access_key" value="bfb87bbd-cecd-4b79-8d71-acd39dc37888">
                             <input name="name" type="text" placeholder="Full Name" class="form-input" required>
                             <input name="email" type="email" placeholder="Email" class="form-input" required>
                             <input name="phone" type="tel" placeholder="Mobile Number" class="form-input" required>
@@ -237,41 +281,35 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <div class="logo-icon"><img src="logo.jpg" alt=""></div>
+                        <div class="logo-icon"><img src="smlogo.jpg" alt=""></div>
                         <div class="logo-text">
-                            <h3>SaralMedia</h3>
+                            <h3>Saral Media</h3>
                         </div>
                     </div>
                     <p class="footer-description">
-                        <!-- write a short description about the company this is a new brand that provides services like live broadcasting, creative visuals, video editing so write something good for this -->
-                        SaralMedia is your go-to partner for innovative digital solutions. We specialize in live broadcasting, creative visuals, and professional video editing to help you stand out in the digital landscape.
+                        Saral Media is your go-to partner for innovative digital solutions. We specialize in Creative Production, and Social Media Management to help you stand out in the digital landscape.
                     </p>
                 </div>
 
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="#">Live Broadcasting</a></li>
-                        <li><a href="#">Creative Visuals</a></li>
+                        <li><a href="#services">Creative Production</a></li>
+                        <li><a href="#services">Social Media Management</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
                     <h4>Connect Us</h4>
                     <ul>
-                      <!-- Here I want some social links with platform name like first insta logo and then instagram text -->
                       <li><a href="https://www.instagram.com/saralmedia/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        <li><a href="https://wa.me/919968500862" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="https://wa.me/919211807938" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+919968500862" target="_blank"><span>+91 9968500862</span></a>
-                        </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <a href="mailto:saralmediaservices@gmail.com" target="_blank"><span>saralmediaservices@gmail.com</span></a>
@@ -285,27 +323,38 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 SaralMedia. All rights reserved. | Privacy Policy | Terms of Service</p>
+                <p>&copy; 2025 Saral Media. All rights reserved. | Privacy Policy | Terms of Service</p>
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Float Button -->
-    <div class="whatsapp-float">
-        <button class="whatsapp-btn" onclick="window.open('https://wa.me/919968500862?text=Hi%20SaralMedia,%20I%27d%20like%20to%20get%20more%20information%20about%20the%20services%20you%20offer.', '_blank')">
-            <i class="fab fa-whatsapp"></i>
-        </button>
+    <!-- Floating Button -->
+    <div class="chatbot-label" id="chatbotLabel" aria-hidden="true">Ask Question</div>
+    <div class="chatbot-btn" id="chatbotBtn">
+        <img src="bot.png" alt="">
     </div>
+
+<!-- Chat Window -->
+<div class="chat-window" id="chatWindow">
+    <div class="chat-header">Saral Media Assistant</div>
+    <div class="chat-body" id="messages"></div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Type a message...">
+        <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+</div>
     <!-- Insta Float Button -->
     <div class="insta-float">
         <button class="insta-btn" onclick="window.open('https://www.instagram.com/saralmedia/', '_blank')">
             <i class="fa-brands fa-instagram"></i>
         </button>
     </div>
-
-    <!-- GSAP CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+<!-- Note: Changes included fixing WhatsApp link, adding mobile menu toggle behavior in JS and CSS, fixing typewriter script initialization. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="index.js"></script>
+<script src="animation.js"></script>
 </body>
 </html>
