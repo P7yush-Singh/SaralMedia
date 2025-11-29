@@ -337,7 +337,13 @@
 
 <!-- Chat Window -->
 <div class="chat-window" id="chatWindow">
-    <div class="chat-header">Saral Media Assistant</div>
+    <div class="chat-header">
+        <div></div>
+        <div class="chat-header-title">Saral Media Assistant</div>
+        <button class="chat-close-btn" onclick="closeChat()" aria-label="Close chat">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
     <div class="chat-body" id="messages"></div>
 
     <div class="chat-input">

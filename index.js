@@ -388,9 +388,34 @@ function animateSuccessCount() {
 
 animateSuccessCount()
 
-document.getElementById("chatbotBtn").onclick = () => {
+function openChat() {
     const win = document.getElementById("chatWindow");
-    win.style.display = win.style.display === "flex" ? "none" : "flex";
+    const btn = document.getElementById("chatbotBtn");
+    const label = document.getElementById("chatbotLabel");
+    win.style.display = "flex";
+    
+    // Hide button and label only on mobile (≤768px)
+    if (window.innerWidth <= 768) {
+        btn.style.display = "none";
+        if (label) label.style.display = "none";
+    }
+}
+
+function closeChat() {
+    const win = document.getElementById("chatWindow");
+    const btn = document.getElementById("chatbotBtn");
+    const label = document.getElementById("chatbotLabel");
+    win.style.display = "none";
+    
+    // Show button and label only on mobile
+    if (window.innerWidth <= 768) {
+        btn.style.display = "flex";
+        if (label) label.style.display = "inline-block";
+    }
+}
+
+document.getElementById("chatbotBtn").onclick = () => {
+    openChat();
 };
 
 // -------------------------------
