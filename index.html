@@ -1,366 +1,405 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SaralMedia - Creative Production & Social Media Management</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="chatbot.css">
-    <link rel="shortcut icon" href="smlogo.jpg" type="image/x-icon" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-    <!-- For SEO Ranking -->
-<meta name="title" content="SaralMedia - Creative Visuals & Video Editing" />
-<meta name="description" content="SaralMedia offers India's best creative visuals, and professional video editing to help your brand grow." />
-<meta name="keywords" content="SaralMedia  media services, India, digital media, video production, content creation, streaming services" />
-<meta name="author" content="SaralMedia Team" />
-<meta name="robots" content="index, follow" />
-
-<!-- Canonical URL -->
-<link rel="canonical" href="https://saralmedia.in/" />
-
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SaralMedia | Visuals That Grow Your Brand</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&amp;family=Inter:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#004e5b",
+                    "secondary-fixed": "#a9edff",
+                    "surface-tint": "#00e55c",
+                    "on-tertiary": "#053732",
+                    "on-tertiary-container": "#305c56",
+                    "surface-container": "#171e37",
+                    "primary": "#85ff93",
+                    "surface-dim": "#0a122a",
+                    "tertiary-fixed": "#beece4",
+                    "outline": "#859582",
+                    "inverse-on-surface": "#282f49",
+                    "on-primary-container": "#006223",
+                    "secondary-fixed-dim": "#89d1e4",
+                    "surface-container-low": "#131a33",
+                    "primary-fixed-dim": "#00e55c",
+                    "outline-variant": "#3c4b3b",
+                    "on-primary": "#003911",
+                    "tertiary-fixed-dim": "#a2cfc8",
+                    "inverse-primary": "#006e28",
+                    "secondary": "#89d1e4",
+                    "error": "#ffb4ab",
+                    "surface-container-highest": "#2c344d",
+                    "on-primary-fixed": "#002107",
+                    "on-secondary": "#003640",
+                    "secondary-container": "#006070",
+                    "on-error": "#690005",
+                    "on-error-container": "#ffdad6",
+                    "primary-container": "#09e85e",
+                    "surface-bright": "#313852",
+                    "primary-fixed": "#6bff84",
+                    "on-background": "#dbe1ff",
+                    "on-surface": "#dbe1ff",
+                    "error-container": "#93000a",
+                    "surface-container-high": "#212942",
+                    "on-secondary-container": "#90d8eb",
+                    "on-surface-variant": "#bacbb6",
+                    "on-tertiary-fixed-variant": "#224e48",
+                    "surface": "#0a122a",
+                    "on-tertiary-fixed": "#00201d",
+                    "tertiary-container": "#a5d2ca",
+                    "on-primary-fixed-variant": "#00531c",
+                    "surface-variant": "#2c344d",
+                    "tertiary": "#c0eee6",
+                    "inverse-surface": "#dbe1ff",
+                    "on-secondary-fixed": "#001f26",
+                    "background": "#0a122a",
+                    "surface-container-lowest": "#050d25"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body { background-color: #0a122a; color: #dbe1ff; font-family: 'Inter', sans-serif; }
+      .headline-font { font-family: 'Manrope', sans-serif; }
+      .glass-card {
+        background: rgba(44, 52, 77, 0.7);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(133, 149, 130, 0.15);
+      }
+      .glow-on-hover:hover {
+        box-shadow: 0 0 20px rgba(133, 255, 147, 0.3);
+      }
+      .text-glow {
+        text-shadow: 0 0 15px rgba(133, 255, 147, 0.5);
+      }
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #0a122a; }
+      ::-webkit-scrollbar-thumb { background: #171e37; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #2c344d; }
+    </style>
 </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo" onclick="window.location.href='#home'">
-                    <div class="logo-icon"><img src="smlogo.jpg" alt=""></div>
-                    <div class="logo-text">
-                        <h1>Saral Media</h1>
-                    </div>
-                </div>
-
-                <nav class="nav-menu">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#services" class="nav-link">Services</a>
-                    <a href="#about" class="nav-link">About Us</a>
-                    <a href="#why" class="nav-link">Why Choose Us</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </nav>
-                <div class="mobile-nav-menu">
-    <a href="#home" class="nav-link">Home</a>
-    <a href="#" class="nav-link">Our Story</a>
-    <a href="#services" class="nav-link">What we do</a>
-    <a href="#why" class="nav-link">Our Work</a>
-    <a href="#contact" class="nav-link">Career</a>
+<body class="antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl rounded-full border border-slate-100/10 bg-slate-950/70 backdrop-blur-3xl flex justify-between items-center px-8 h-16 z-50 shadow-[0_20px_40px_-10px_rgba(10,18,42,0.5)]">
+<div class="text-xl font-bold tracking-tighter text-[#dbe1ff] headline-font">SaralMedia</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#85ff93] font-bold border-b-2 border-[#85ff93] pb-1 font-manrope text-sm tracking-wide" href="#">Services</a>
+<a class="text-[#dbe1ff] hover:text-[#85ff93] transition-colors font-manrope text-sm tracking-wide" href="#">Work</a>
+<a class="text-[#dbe1ff] hover:text-[#85ff93] transition-colors font-manrope text-sm tracking-wide" href="#">About</a>
 </div>
-
-                <button class="contact-btn" onclick="window.location.href='#contact'">Contact Us</button>
-                <button class="mobile-menu-btn"><i class="fa fa-bars"></i></button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="badge">🏆 Best Agency in India</div>
-                    
-                    <h1 class="hero-title">
-                        <span class="line-1">India's Leading</span>
-                        <span class="line-2">Creative</span>
-                        <span class="line-3">Production & Social Media</span>
-                        <span class="line-4">Agency</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        Saral Media is your go-to partner for innovative digital solutions. We specialize in Creative Production, and Social Media Management to help you stand out in the digital landscape.
-                    </p>
-
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Creative Production</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Social Media Management</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Secure & Reliable</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>24/7 Support</span>
-                        </div>
-                    </div>
-
-                    <div class="hero-buttons">
-                        <button class="btn btn-primary" onclick="window.location.href='#contact'">
-                            Get Started
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                        <button class="btn btn-secondary" onclick="window.open('https://wa.me/919211807938?text=Hi%20SaralMedia,%20I%27d%20like%20to%20get%20more%20information%20about%20the%20services%20you%20offer.', '_blank')">
-                            <i class="fab fa-whatsapp"></i>
-                            WhatsApp Us
-                        </button>
-                    </div>
-                </div>
-
-                <div class="hero-image">
-                    <div class="image-container">
-                        <img src="temp.webp" alt="Website Design Showcase" class="hero-img">
-                        <div class="floating-element element-1"></div>
-                        <div class="floating-element element-2"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="wave-separator">
-            <svg viewBox="0 0 1440 120">
-                <path fill="#ffffff" d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,64C960,75,1056,85,1152,80C1248,75,1344,53,1392,42.7L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">Our Services</div>
-                <h2 class="section-title">Complete Digital Solutions</h2>
-                <p class="section-description">
-                    From concept to launch, we provide end-to-end digital services to help your business thrive online
-                </p>
-            </div>
-
-            <div class="services-grid">
-                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <h3>Creative Production</h3>
-                    <p>
-                        We create stunning visuals and engaging content that captures your audience's attention
-                    </p>
-                    <button class="service-btn" onclick="window.open('https://wa.me/919211807938?text=Hi%20SaralMedia,%20I%27d%20like%20to%20know%20about%20Live%20Broadcasting%20service.', '_blank')" >Request</button>
-                    <button class="service-btn" onclick="window.location.href='service-details.html?service=production'">Know More</button>
-                </div>
-
-                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-broadcast-tower"></i>
-                    </div>
-                    <h3>Social Media Management</h3>
-                    <p>
-                        We manage your social media presence to enhance engagement and grow your brand online
-                    </p>
-                    <button class="service-btn" onclick="window.open('https://wa.me/919211807938?text=Hi%20SaralMedia,%20I%27d%20like%20to%20know%20about%20Creative%20Visuals%20service.', '_blank')" >Request</button>
-                    <button class="service-btn" onclick="window.location.href='service-details.html?service=social'">Know More</button>
-                </div>
-                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Coming Soon</h3>
-                    <p>
-                        Stay tuned for our upcoming services, designed to enhance user engagement and accessibility.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-     <section id="about" class="about-section">
-  <div class="container about-grid">
-    <div class="about-image">
-      <img src="about.png" alt="About SaralMedia" />
-    </div>
-    <div class="about-content">
-      <div class="section-badge">About Us</div>
-      <h2 class="section-title">Empowering Brands with Visual Impact</h2>
-
-      <h3 class="typewriter-text">
-        We 
-        <span id="typewriter"></span>
-      </h3>
-
-      <p class="section-description">
-        Saral Media is a creative agency from India, specializing in Creative Production and Social Media Management — bringing your brand to life with impactful visuals and a strong digital presence.
-        <br /><br />
-        We’re not just a service provider — we’re your digital growth partner. With a keen eye on trends, a deep understanding of brand identity, and a passion for innovation, we help you stand out in the crowded digital space.
-        <br /><br />
-        From stunning videos to impactful reels and strategic social media planning, we bring your ideas to life and connect you with your audience. Let’s create something meaningful — the Saral way.
-      </p>
-      
-    </div>
-  </div>
-  
-</section>
-
-     <!-- Why Choose Us -->
-      <section id="why" class="why-us">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-badge">Why Choose Us</div>
-      <h2 class="section-title">Why Saral Media Stands Out</h2>
-      <p class="section-description">
-        At Saral Media, we combine creativity, technology, and a deep understanding of your goals to deliver unmatched digital services.
-      </p>
-    </div>
-
-    <div class="why-grid">
-      <div class="why-card">
-        <i class="fas fa-user-tie"></i>
-        <h3>Expert Team</h3>
-        <p>Our professionals are highly skilled in live broadcasting, visuals, and editing.</p>
-      </div>
-      <div class="why-card">
-        <i class="fa-solid fa-indian-rupee-sign"></i>
-        <h3>Affordable Pricing</h3>
-        <p>We offer premium quality services tailored to your budget.</p>
-      </div>
-      <div class="why-card">
-        <i class="fas fa-lightbulb"></i>
-        <h3>Creative Excellence</h3>
-        <p>We produce standout visuals that bring your brand to life.</p>
-      </div>
-      <div class="why-card">
-  <i class="fas fa-flag-checkered"></i>
-  <h3>Proven Success</h3>
-  <p>
-    We’ve delivered <span id="success-count">0</span>+ happy clients.
-  </p>
-</div>
-
-      <div class="why-card">
-        <i class="fas fa-thumbs-up"></i>
-        <h3>Client-First</h3>
-        <p>We value transparency and prioritize your satisfaction always.</p>
-      </div>
-      <div class="why-card">
-        <i class="fas fa-headset"></i>
-        <h3>24/7 Support</h3>
-        <p>We’re always available to help you, whenever you need us.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <!-- CTA Section -->
-    <section id="contact" class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">
-                    <!-- what should I write here  -->
-                    Ready to Elevate Your Brand?
-                </h2>
-                <p class="cta-description">
-                    Let's discuss your project and create something amazing together. Get in touch with our expert team today.
-                </p>
-
-                <div class="contact-form">
-                    <form class="form" action="https://api.web3forms.com/submit" method="POST">
-                        <div class="form-row">
-
-                            <input type="hidden" name="access_key" value="bfb87bbd-cecd-4b79-8d71-acd39dc37888">
-                            <input name="name" type="text" placeholder="Full Name" class="form-input" required>
-                            <input name="email" type="email" placeholder="Email" class="form-input" required>
-                            <input name="phone" type="tel" placeholder="Mobile Number" class="form-input" required>
-                          </div>
-                          <textarea name="msg" placeholder="Tell us about your project..." class="form-textarea" rows="4"></textarea>
-                          <button type="submit" class="form-submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <div class="logo-icon"><img src="smlogo.jpg" alt=""></div>
-                        <div class="logo-text">
-                            <h3>Saral Media</h3>
-                        </div>
-                    </div>
-                    <p class="footer-description">
-                        Saral Media is your go-to partner for innovative digital solutions. We specialize in Creative Production, and Social Media Management to help you stand out in the digital landscape.
-                    </p>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Creative Production</a></li>
-                        <li><a href="#services">Social Media Management</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Connect Us</h4>
-                    <ul>
-                      <li><a href="https://www.instagram.com/saralmedia/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        <li><a href="https://wa.me/919211807938" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:saralmediaservices@gmail.com" target="_blank"><span>saralmediaservices@gmail.com</span></a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Delhi, India</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Saral Media. All rights reserved. | Privacy Policy | Terms of Service</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Float Button -->
-    <!-- Floating Button -->
-    <div class="chatbot-label" id="chatbotLabel" aria-hidden="true">Ask Question</div>
-    <div class="chatbot-btn" id="chatbotBtn">
-        <img src="bot.png" alt="">
-    </div>
-
-<!-- Chat Window -->
-<div class="chat-window" id="chatWindow">
-    <div class="chat-header">
-        <div></div>
-        <div class="chat-header-title">Saral Media Assistant</div>
-        <button class="chat-close-btn" onclick="closeChat()" aria-label="Close chat">
-            <i class="fa-solid fa-xmark"></i>
+<button class="bg-primary-container text-on-primary-container font-bold py-2 px-6 rounded-full hover:scale-105 hover:shadow-[0_0_20px_rgba(133,255,147,0.3)] transition-all duration-300 active:scale-95 text-sm">
+            Get Started
         </button>
-    </div>
-    <div class="chat-body" id="messages"></div>
-
-    <div class="chat-input">
-        <input type="text" id="userInput" placeholder="Type a message...">
-        <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
-    </div>
+</nav>
+<!-- HERO SECTION -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-secondary/5 rounded-full blur-[150px]"></div>
 </div>
-    <!-- Insta Float Button -->
-    <div class="insta-float">
-        <button class="insta-btn" onclick="window.open('https://www.instagram.com/saralmedia/', '_blank')">
-            <i class="fa-brands fa-instagram"></i>
-        </button>
-    </div>
-<!-- Note: Changes included fixing WhatsApp link, adding mobile menu toggle behavior in JS and CSS, fixing typewriter script initialization. -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="index.js"></script>
-<script src="animation.js"></script>
-</body>
-</html>
+<div class="relative z-10 max-w-7xl mx-auto px-8 text-center">
+<span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-primary uppercase glass-card rounded-full border border-primary/20">Elevate Your Presence</span>
+<h1 class="headline-font text-5xl md:text-8xl font-extrabold tracking-tighter text-on-surface leading-[0.95] mb-8">
+                We Create Visuals That <span class="text-primary text-glow">Grow Your Brand</span>
+</h1>
+<p class="max-w-2xl mx-auto text-lg md:text-xl text-on-surface-variant mb-12 font-light leading-relaxed">
+                Premium video production and strategic marketing designed to turn viewers into loyal advocates. Experience the fusion of creativity and data.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="w-full sm:w-auto bg-primary text-on-primary font-bold py-4 px-10 rounded-xl hover:shadow-[0_0_30px_rgba(133,255,147,0.4)] transition-all duration-300 transform hover:-translate-y-1">
+                    Get Started
+                </button>
+<button class="w-full sm:w-auto flex items-center justify-center gap-3 bg-surface-container-highest text-on-surface font-semibold py-4 px-10 rounded-xl border border-outline-variant hover:bg-surface-bright transition-all duration-300">
+<span class="material-symbols-outlined text-primary">play_circle</span>
+                    View Work
+                </button>
+</div>
+</div>
+</section>
+<!-- ABOUT / STATS SECTION -->
+<section class="py-24 relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="headline-font text-4xl font-bold mb-6">About SaralMedia</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-10">
+                        We are a collective of digital curators and visual architects. Our mission is to bridge the gap between high-end aesthetic storytelling and performance-driven results.
+                    </p>
+<div class="grid grid-cols-3 gap-8">
+<div class="space-y-2">
+<div class="text-4xl font-black text-primary headline-font">100+</div>
+<div class="text-xs uppercase tracking-widest text-secondary font-bold">Projects</div>
+</div>
+<div class="space-y-2">
+<div class="text-4xl font-black text-primary headline-font">50+</div>
+<div class="text-xs uppercase tracking-widest text-secondary font-bold">Clients</div>
+</div>
+<div class="space-y-2">
+<div class="text-4xl font-black text-primary headline-font">1M+</div>
+<div class="text-xs uppercase tracking-widest text-secondary font-bold">Views</div>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/20 rounded-xl blur-2xl group-hover:bg-primary/30 transition duration-500"></div>
+<img alt="Studio Setup" class="relative rounded-xl w-full object-cover h-[400px] shadow-2xl grayscale hover:grayscale-0 transition duration-700" data-alt="Modern clean studio setup with high-end camera gear, soft lighting, and sleek monitors in a professional creative environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpEdC1DbAHffk2o8qif-60VY6XLarmGRNRE05eLMyQ1V4MbjvCnmQ26kJUe0nItMwLEL3JOrApxFNokkiYJr9fxpJnmk4WsSL5r3flcwVBInpFV7G9K1VzepY4ZQgcOCWithDF520lEIEC-rMo85NYex3Pk_D3l1qSI8zG9FaYGJIsJ4mAyUpVV6zGd-TBR3xKBrmmdz3HbTB-N-XVyP_XTsXLrB0lbS9_8-Q2oZJhzjfub8OU86e7BYo7b-jgRVqpY_ZP_1UnuA5E"/>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICES BENTO GRID -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20 text-center">
+<h2 class="headline-font text-4xl md:text-5xl font-bold mb-4">Our Expertise</h2>
+<div class="h-1 w-24 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Card -->
+<div class="md:col-span-2 glass-card p-10 rounded-xl flex flex-col justify-between hover:border-primary/40 transition-colors group">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform block">videocam</span>
+<h3 class="headline-font text-3xl font-bold mb-4">Video Production</h3>
+<p class="text-on-surface-variant text-lg">Cinematic storytelling that captures the essence of your brand, from high-budget commercials to documentary-style features.</p>
+</div>
+<div class="mt-12 flex gap-4 overflow-hidden opacity-30 group-hover:opacity-100 transition-opacity">
+<span class="px-4 py-1 rounded-full border border-primary text-[10px] text-primary uppercase font-bold tracking-widest">4K Content</span>
+<span class="px-4 py-1 rounded-full border border-primary text-[10px] text-primary uppercase font-bold tracking-widest">Post-Production</span>
+</div>
+</div>
+<!-- Small Card -->
+<div class="glass-card p-8 rounded-xl hover:border-primary/40 transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:rotate-12 transition-transform block">share</span>
+<h3 class="headline-font text-2xl font-bold mb-3">Social Media</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Strategic management to build community and spark engagement across all major social platforms.</p>
+</div>
+<!-- Small Card -->
+<div class="glass-card p-8 rounded-xl hover:border-primary/40 transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:-translate-y-2 transition-transform block">layers</span>
+<h3 class="headline-font text-2xl font-bold mb-3">Branding</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Visual identity systems that communicate prestige, reliability, and modern aesthetic values.</p>
+</div>
+<!-- Small Card -->
+<div class="glass-card p-8 rounded-xl hover:border-primary/40 transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform block">bolt</span>
+<h3 class="headline-font text-2xl font-bold mb-3">Short Content</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">High-impact Reels and TikToks optimized for virality and retention in the attention economy.</p>
+</div>
+<!-- Small Card -->
+<div class="glass-card p-8 rounded-xl hover:border-primary/40 transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform block">trending_up</span>
+<h3 class="headline-font text-2xl font-bold mb-3">Performance</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Data-driven marketing campaigns focusing on ROI and sustainable brand growth.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY CHOOSE US -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+<div class="lg:col-span-1">
+<h2 class="headline-font text-4xl font-extrabold mb-6 leading-tight">Why <span class="text-primary">Choose</span> Us?</h2>
+<p class="text-on-surface-variant">We don't just deliver files; we deliver results that move the needle.</p>
+</div>
+<div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-8 bg-surface-container rounded-xl border border-outline-variant/30 hover:border-primary transition-all duration-500">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">psychology</span>
+</div>
+<h4 class="headline-font text-xl font-bold mb-3">Personalized Strategy</h4>
+<p class="text-on-surface-variant text-sm">Every brand is unique. We build bespoke frameworks tailored to your specific audience and objectives.</p>
+</div>
+<div class="p-8 bg-surface-container rounded-xl border border-outline-variant/30 hover:border-primary transition-all duration-500">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">speed</span>
+</div>
+<h4 class="headline-font text-xl font-bold mb-3">Fast Delivery</h4>
+<p class="text-on-surface-variant text-sm">Speed to market is critical. Our streamlined workflows ensure high-quality output on tight timelines.</p>
+</div>
+<div class="p-8 bg-surface-container rounded-xl border border-outline-variant/30 hover:border-primary transition-all duration-500">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+</div>
+<h4 class="headline-font text-xl font-bold mb-3">Creative Excellence</h4>
+<p class="text-on-surface-variant text-sm">We obsess over pixels and frames. Our creative standard is nothing short of world-class.</p>
+</div>
+<div class="p-8 bg-surface-container rounded-xl border border-outline-variant/30 hover:border-primary transition-all duration-500">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">insights</span>
+</div>
+<h4 class="headline-font text-xl font-bold mb-3">Data-Driven Growth</h4>
+<p class="text-on-surface-variant text-sm">We monitor performance metrics to optimize content constantly for the best possible ROI.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PORTFOLIO -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="headline-font text-4xl md:text-5xl font-bold">Featured Work</h2>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                    View Portfolio <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-high aspect-[4/5]">
+<img alt="Work 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Cinematic close-up of a person walking through a misty forest, atmospheric green and blue lighting, high quality film grain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8dwrh62nLwTbcqPWWbVcov5oKmiHizpMONRSbEILxYvrCJom6QvTvV31V6KeahbW3CQQtfPLxPsjHmsW0uWLZT4aNnOuuPmWIghHXtLo5fxe1vsxiCBaqZNOgstoYoqd1HSG-lXAJpsIFscZ6UL2QiOskJiQvZNaVTEMnBwi3D-gxrsA7_vGP8qJlKaYL3YHsvaQd97isof9O5dqsmCDOaYPu2OnBH4F0QXWVUc9PFm4UQlqUzczyBv4qYMuxy36j34QWGm4w-mr7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<span class="text-xs font-bold text-primary uppercase tracking-widest mb-2 block">Commercial</span>
+<h4 class="headline-font text-2xl font-bold">The Urban Explorer</h4>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-high aspect-[4/5]">
+<img alt="Work 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Abstract 3D render of flowing neon green lines on a dark black background, representing digital growth and connectivity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjtqndca2Gyt4lPBEHkN-HERLnZJq2ON-C5_iZwmXJuEX3TUkoO4o-gG9Jbh77hyZzvX9UJANXfX-O-0wb-1DaLApdbZXvXIf-Fs9LtykmtkXW8CGLrtEGeYgOuJQe-X5Lh4pNSGQ2A0fyWrnJu2tyev5qkYqxMvG51TvKTSqfSqiVhzEgKNGiO8ipRvJWq7l7F2q9waqF8JLSz4CWZbTfltKiwwDATtGgusMv3CgULz5wO5Dlr2FOmZWKnlooWFubrm2VKUQrBqlk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<span class="text-xs font-bold text-primary uppercase tracking-widest mb-2 block">Branding</span>
+<h4 class="headline-font text-2xl font-bold">Neon Pulse Identity</h4>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-high aspect-[4/5]">
+<img alt="Work 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Behind the scenes shot of a high-end camera on a gimbal, filming a sleek minimalist product on a rotating platform with colorful studio lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH6zciVPwccCpovjEF5Hfzkeo5dBnbYIolv8y_F5CzMP8Cw2NzqdMXNjFFP4qDvNk5SkQurbrKbRFjzJUflErEOY9S65tNofKAtsmbMqbQVHnaIE0lzAX3GGEui3r_CWouBcVoJWYdZn1l2_5zMC7eoeJFaiauL4ii5TYTKPLM7PMDW2Gcih-eJp4NjTte2Ud5ZoRYimlvs3h5KQipx7mIdsuribIsCDLhaSJ45mZtX9CZ1-WYfE8VXnUKTdcjXS9M1r_CPDXh-1EG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<span class="text-xs font-bold text-primary uppercase tracking-widest mb-2 block">Content Strategy</span>
+<h4 class="headline-font text-2xl font-bold">Tech Horizon Series</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROCESS SECTION -->
+<section class="py-32 relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="headline-font text-4xl md:text-5xl font-bold text-center mb-24">The Creation Journey</h2>
+<div class="relative">
+<!-- Connector Line -->
+<div class="hidden lg:block absolute top-1/2 left-0 w-full h-px bg-outline-variant/30 -translate-y-1/2"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Step 1 -->
+<div class="relative bg-surface-container-low p-8 rounded-xl border border-outline-variant/20 hover:border-primary transition-all">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-6 headline-font relative z-10">1</div>
+<h4 class="headline-font text-xl font-bold mb-3">Understanding</h4>
+<p class="text-on-surface-variant text-sm">Deep dive into your brand DNA, target audience, and market position.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative bg-surface-container-low p-8 rounded-xl border border-outline-variant/20 hover:border-primary transition-all">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-6 headline-font relative z-10">2</div>
+<h4 class="headline-font text-xl font-bold mb-3">Strategy</h4>
+<p class="text-on-surface-variant text-sm">Developing a creative roadmap that aligns with your specific growth goals.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative bg-surface-container-low p-8 rounded-xl border border-outline-variant/20 hover:border-primary transition-all">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-6 headline-font relative z-10">3</div>
+<h4 class="headline-font text-xl font-bold mb-3">Creation</h4>
+<p class="text-on-surface-variant text-sm">High-fidelity production bringing the vision to life through cinematic visuals.</p>
+</div>
+<!-- Step 4 -->
+<div class="relative bg-surface-container-low p-8 rounded-xl border border-outline-variant/20 hover:border-primary transition-all">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-6 headline-font relative z-10">4</div>
+<h4 class="headline-font text-xl font-bold mb-3">Optimization</h4>
+<p class="text-on-surface-variant text-sm">Analyzing performance and iterating to ensure maximal impact and scale.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<span class="material-symbols-outlined text-primary text-6xl opacity-30">format_quote</span>
+</div>
+<div class="relative">
+<div class="glass-card p-12 rounded-xl text-center">
+<p class="text-2xl md:text-3xl font-light italic leading-relaxed mb-10 text-on-surface">
+                            "SaralMedia didn't just make a video; they created a visual legacy for our brand. Our conversion rates increased by 40% within the first month of launching the campaign."
+                        </p>
+<div class="flex items-center justify-center gap-4">
+<div class="w-14 h-14 rounded-full overflow-hidden border-2 border-primary">
+<img alt="Client" data-alt="Portrait of a professional man in his 40s with a confident smile, warm studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQggICPtsOch7EWk3TnTy3sYBwthC_adytppjvETQkgyNt8tZNpPF-Rna8_Y4lpC8u1rJyot44uIcKXxjzfu8RJ4af36HGGQKRc3ztf-BYO_8TtXmSkMAMqTGo8IZb-sJW2ikTIe-HbAZ3xVgpU-eDufVKta7m7NmVTHQrzD5fzkRCqxFwsSkwH14CCS5bRMVRW6_gJGVcTtMKt13V65fQHgsyKRsE5PE6K9lvTayvsFPhQ1cQmIu7W2JhCZ5zE1H-mJQO1uZlAr7W"/>
+</div>
+<div class="text-left">
+<div class="font-bold headline-font text-lg">Marcus Thorne</div>
+<div class="text-xs text-primary uppercase font-bold tracking-widest">CEO, Apex Dynamics</div>
+</div>
+</div>
+</div>
+<!-- Navigation Buttons (Static for pure HTML) -->
+<div class="flex justify-center gap-4 mt-8">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL CTA -->
+<section class="py-32 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5"></div>
+<div class="max-w-5xl mx-auto px-8 relative z-10">
+<div class="glass-card p-16 md:p-24 rounded-xl text-center border-primary/20">
+<h2 class="headline-font text-4xl md:text-6xl font-black mb-8 leading-tight">Ready to <span class="text-primary text-glow">Grow Your Brand?</span></h2>
+<p class="text-on-surface-variant text-lg md:text-xl mb-12 max-w-2xl mx-auto">
+                    Join forward-thinking brands who are dominating their market with premium visual content.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="w-full sm:w-auto bg-primary text-on-primary font-bold py-5 px-12 rounded-xl text-lg hover:shadow-[0_0_40px_rgba(133,255,147,0.5)] transition-all">
+                        Book a Discovery Call
+                    </button>
+<button class="w-full sm:w-auto bg-transparent text-on-surface font-bold py-5 px-12 rounded-xl text-lg border border-outline-variant hover:bg-surface-bright transition-all">
+                        Contact Us
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0a122a] w-full py-16 border-t border-slate-100/5">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-lg font-black text-[#dbe1ff] headline-font">SaralMedia</div>
+<div class="font-manrope text-xs uppercase tracking-[0.1em] text-slate-400">© 2024 SaralMedia. All rights reserved.</div>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-manrope text-xs uppercase tracking-[0.1em] text-slate-400 hover:text-[#85ff93] transition-colors hover:translate-y-[-2px] transition-transform" href="#">Instagram</a>
+<a class="font-manrope text-xs uppercase tracking-[0.1em] text-slate-400 hover:text-[#85ff93] transition-colors hover:translate-y-[-2px] transition-transform" href="#">WhatsApp</a>
+<a class="font-manrope text-xs uppercase tracking-[0.1em] text-slate-400 hover:text-[#85ff93] transition-colors hover:translate-y-[-2px] transition-transform" href="#">Email</a>
+<a class="font-manrope text-xs uppercase tracking-[0.1em] text-slate-400 hover:text-[#85ff93] transition-colors hover:translate-y-[-2px] transition-transform" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
